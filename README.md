@@ -1,0 +1,4 @@
+.vimrc
+======
+
+Minimal VIM configuration
