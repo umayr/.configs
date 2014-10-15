@@ -52,6 +52,9 @@ alias ll='ls -la'
 # Show hidden files 
 alias l.='ls -d .* --color=auto'
 
+# Default 'ls'
+alias ls='ls -lhart'
+
 # get rid of command not found
 alias cd..='cd ..'
  
