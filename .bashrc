@@ -112,7 +112,7 @@ up () {
           UP="${UP}../"
           COUNTER=$(( $COUNTER -1 ))
          done
-        echo "cd $UP"
+        echo -e ${Color_Off}${Cyan}Executed: cd $UP${Color_Off}
         cd $UP
         UP=''
 }
