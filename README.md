@@ -1,9 +1,7 @@
-vimrc
+Configuration Files.
 ======
 
-Minimal VIM configuration
+Repo for all .files. 
 
-To install
-----------
+**Highly Unstable**
 
-`wget -O ~/.vimrc http://github.com/lucasoman/Conf/raw/master/.vimrc`
