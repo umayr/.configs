@@ -70,8 +70,53 @@ On_IBlue='\e[0;104m'    # Blue
 On_IPurple='\e[0;105m'  # Purple
 On_ICyan='\e[0;106m'    # Cyan
 On_IWhite='\e[0;107m'   # White
-
-#
-alias ls='ls -al --color=tty'
+ 
 LS_COLORS="no=00:fi=00:di=00;36:ln=00;36:pi=40;33:so=00;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=00;35:*.cmd=00;32:*.exe=00;32:*.sh=00;32:*.gz=00;31:*.bz2=00;31:*.bz=00;31:*.tz=00;31:*.rpm=00;31:*.cpio=00;31:*.t=93:*.pm=00;36:*.pod=00;96:*.conf=00;33:*.off=00;9:*.jpg=00;94:*.png=00;94:*.xcf=00;94:*.JPG=00;94:*.gif=00;94:*.pdf=00;91"
 export LS_COLORS
+
+## Colorize the ls output ##
+alias ls='ls -al --color=tty'
+ 
+## Use a long listing format ##
+alias ll='ls -la'
+ 
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+## get rid of command not found ##
+alias cd..='cd ..'
+ 
+## a quick way to get out of current directory ##
+alias ..='cd ..'
+
+alias cd...='cd ../../../'
+alias ...='cd ../../../'
+
+alias cd....='cd ../../../../'
+alias ....='cd ../../../../'
+
+alias cd.....='cd ../../../../'
+alias .....='cd ../../../../'
+
+alias .4='cd ../../../../'
+
+alias .5='cd ../../../../..'
+ 
+## Colorize the grep command output for ease of use (good for log files)##
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+
+## Start calculator with math support ##
+alias bc='bc -l'
+
+## Path command ##
+alias path='echo -e ${PATH//:/\\n}'
+
+## Time and Date ##
+alias now='date +"%T'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+
+## Show open ports ##
+alias ports='netstat -tanp'
