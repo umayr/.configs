@@ -102,7 +102,11 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Go Up in the directory tree.
 up () {
-        COUNTER=$1
+		if [ -z $1 ]; then
+			COUNTER=1
+		else
+			COUNTER=$1
+		fi
         while [[ $COUNTER -gt 0 ]]
          do
           UP="${UP}../"
