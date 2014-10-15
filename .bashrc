@@ -83,9 +83,9 @@ alias bc='bc -l'
 alias path='echo -e ${PATH//:/\\n}'
 
 # Time and Date
-alias now='date +"%T'
-alias nowtime=now
-alias nowdate='date +"%d-%m-%Y"'
+alias now='echo -e `${Color_Off}${Cyan}date +"%T"${Color_Off}`'
+alias nowtime='echo -e `${Color_Off}${Cyan}now${Color_Off}`'
+alias nowdate='echo -e `${Color_Off}${Cyan}date +"%d-%m-%Y"${Color_Off}`'
 
 # Show open ports
 alias ports='netstat -tanp'
