@@ -1,0 +1,16 @@
+[user]
+	name = Umayr Shahid
+	email = email@me.com
+[core]
+	autocrlf = true
+[alias]
+	st	=	status -sb
+	plm	=	pull origin master
+	pld	=	pull origin develop
+	psm	=	push origin master
+	psd	=	push origin develop
+	ls	=	log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]\" --decorate
+	ll	=	log --pretty=format:\"%C(yellow)%h%Cred%d %Creset%s%Cgreen [%cn]\" --decorate --numstat
+	ld	=	log --pretty=format:\"%C(yellow)%h %C(magenta)%ad% %Cred%d %Creset%s%Cgreen [%cn]\" --decorate --date=relative
+	alias	=	config --get-regexp ^alias\\.
+
