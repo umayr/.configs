@@ -53,7 +53,7 @@ alias ll='ls -la'
 alias l.='ls -d .* --color=auto'
 
 # Default 'ls'
-alias ls='ls -lhart'
+alias ls='ls -lhart --color=auto'
 
 # get rid of command not found
 alias cd..='cd ..'
@@ -86,9 +86,9 @@ alias bc='bc -l'
 alias path='echo -e ${PATH//:/\\n}'
 
 # Time and Date
-alias now='echo -e `${Color_Off}${Cyan}date +"%T"${Color_Off}`'
-alias nowtime='echo -e `${Color_Off}${Cyan}now${Color_Off}`'
-alias nowdate='echo -e `${Color_Off}${Cyan}date +"%d-%m-%Y"${Color_Off}`'
+alias now='echo -e ${Color_Off}${Cyan}`date +"%T"`${Color_Off}'
+alias nowtime='echo -e ${Color_Off}${Cyan}`now`${Color_Off}'
+alias nowdate='echo -e ${Color_Off}${Cyan}`date +"%d-%m-%Y"`${Color_Off}'
 
 # Show open ports
 alias ports='netstat -tanp'
@@ -102,19 +102,19 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # Go Up in the directory tree.
 up () {
-		if [ -z $1 ]; then
-			COUNTER=1
-		else
-			COUNTER=$1
-		fi
-        while [[ $COUNTER -gt 0 ]]
-         do
-          UP="${UP}../"
-          COUNTER=$(( $COUNTER -1 ))
-         done
-        echo -e ${Color_Off}${Cyan}Executed: cd $UP${Color_Off}
-        cd $UP
-        UP=''
+	if [ -z $1 ]; then
+		COUNTER=1
+	else
+		COUNTER=$1
+	fi
+    while [[ $COUNTER -gt 0 ]]
+     do
+      UP="${UP}../"
+      COUNTER=$(( $COUNTER -1 ))
+     done
+    echo -e ${Color_Off}${Cyan}Executed: cd $UP${Color_Off}
+    cd $UP
+    UP=''
 }
 
 # Generates a random password.
