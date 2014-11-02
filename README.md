@@ -1,7 +1,7 @@
 Configuration Files.
 ======
 
-Repo for all .files. 
+Repo for all personal configuration dot files. 
 
 **Highly Unstable**
 

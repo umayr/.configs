@@ -44,10 +44,7 @@ export LS_COLORS
 #-----------------------------
 
 # Colorize the ls output
-alias ls='ls --color=tty'
- 
-# Use a long listing format
-alias ll='ls -la'
+alias lc='ls --color=auto'
  
 # Show hidden files 
 alias l.='ls -d .* --color=auto'
@@ -75,9 +72,9 @@ alias .4='cd ../../../../'
 alias .5='cd ../../../../..'
  
 # Colorize the grep command output for ease of use (good for log files)
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
+##alias grep='grep --color=auto'
+##alias egrep='egrep --color=auto'
+##alias fgrep='fgrep --color=auto'
 
 # Start calculator with math support
 alias bc='bc -l'
